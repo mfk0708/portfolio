@@ -1,0 +1,156 @@
+.education {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  margin-left: 6rem;
+
+}
+.main-txt {
+  color: white;
+  margin-top: 12rem;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.edu-txt {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.edu-txt2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.row {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  color: #00abf0;
+  margin-bottom: 1rem;
+  font-size: small;
+}
+.edu,.project {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  border-left: 2px solid #00abf0;
+  position: relative;
+
+
+}
+
+
+.edu-content,.project-content {
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  margin-left: 2rem;
+  width: 80%;
+  padding: 1rem;
+  position: relative;
+  height: 100%;
+  z-index: 0;
+  transition: 0.3s;
+  overflow: hidden;
+  cursor: pointer;
+}
+.edu-content p,
+.project-content p {
+  width: 100%;
+
+}
+
+.edu-content::before,
+.project-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #112e42;
+  z-index: -1;
+  transition: 0.5s ease;
+
+}
+
+.edu-content:hover::before,
+.project-content:hover::before {
+  width: 100%;
+}
+.edu-content:hover,
+.project-content:hover {
+  transform: scale(1.03);
+}
+
+.dot::before {
+  content: "";
+  background-color: #00abf0;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  position: absolute;
+  left: -1.6%;
+}
+.dot1::before {
+  content: "";
+  background-color: #00abf0;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  position: absolute;
+  left: -1.6%;
+}
+.project-content:hover {
+  transform: scale(1.03);
+}
+
+.icon1 {
+  margin: 0;
+  padding: 0 ;
+  outline: none;
+  border: none;
+  display: inline-block;
+  font-size: medium;
+  color: #00abf0;
+}
+
+
+.row h3 {
+  color: #00abf0; 
+  margin: 0;
+  padding: 0;
+  font-size: medium;
+}
+
+
+
+@media (max-width: 1024px) {
+  .education {
+    flex-direction: column;
+    margin-left: 1.5rem;
+    width: 100%;
+  }
+  .edu-txt{
+    margin-right: 2rem;
+  }
+  .edu-txt2{
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+.edu-content,.project-content{
+  width: 80%;
+}
+}
+@media (max-width:600px){
+  .dot1::before,.dot::before{
+    left: -0.7rem;
+  }
+
+}
