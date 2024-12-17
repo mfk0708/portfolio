@@ -25,12 +25,14 @@ const Footer = () => {
             <a href="https://www.instagram.com/_mohd_fahad_07/">
               <FontAwesomeIcon icon={faInstagram} className="icon-b" color="#dd2a7b"/>
             </a>
+        
             <a href="https://www.linkedin.com/in/mohamedfahadkhan/">
               <FontAwesomeIcon icon={faLinkedinIn} className="icon-b" color="#0077b5" />
             </a>
             <a href="https://github.com/mfk0708">
               <FontAwesomeIcon icon={faGithub} className="icon-b" color="#3a4c8d" />
             </a>
+       
           </div>
         </div>
         <div className="footer-list">

@@ -45,6 +45,7 @@
   justify-content: center;
   overflow: hidden;
   z-index: 1;
+  margin-right: .5rem;
   transition: .4s ease;
  
 }
@@ -74,9 +75,4 @@
 }
 .list2:hover::before{
     width: 100%;
-}
-@media (max-width:400px){
- .footer-list a{
-    margin: .3rem;
- }
 }

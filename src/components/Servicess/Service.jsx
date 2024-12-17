@@ -30,7 +30,7 @@ import { useInView } from "react-intersection-observer";
       <div className='service'>
       <i className="fa-brands fa-figma"></i>
         <h3>UI&UX DESIGN</h3>
-        <p>I am a UI/UX designer skilled in Figma, creating intuitive and visually striking interfaces. My work focuses on user-centric designs through detailed wireframes, interactive prototypes, and polished visuals. I deliver engaging, functional solutions that simplify user experiences and  meaningful connections.</p>
+        <p>I am a UI/UX designer skilled in Figma, creating intuitive and visually striking interfaces. My work focuses on user-centric designs through detailed wireframes, interactive prototypes, and polished visuals. I deliver engaging, functional solutions that simplify user experiences.</p>
       </div>
     </div>
   </div>

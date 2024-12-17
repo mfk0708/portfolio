@@ -34,6 +34,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 5rem;
+  font-size: 2.5rem;
 }
  .myImg {
   height: 40vh;

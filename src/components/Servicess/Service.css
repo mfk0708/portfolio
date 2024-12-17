@@ -1,5 +1,5 @@
 .service-text{
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: white;
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@
     align-items: center;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 2rem;
-    margin-left: 2.5rem;
+    margin-left: 3.5rem;
     transform: translateY(30%);
     transition: transform 0.5s ease-in,opacity 0.5s ease-in;
     opacity: 0;
@@ -60,4 +60,9 @@
     transform: scale(1.07);
     background-color: black;
     color: #00abf0;
+}
+@media (max-width:1024px){
+    .service-text{
+        margin-left: 2rem;
+    }
 }
