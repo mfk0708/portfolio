@@ -9,7 +9,7 @@ const Home = () => {
   const[isIndex,setIsIndex]=useState(0);
   const handleResume = () => {
     const link = document.createElement("a");
-    link.href = "./src/assets/resume.pdf";
+    link.href = "/assets/resume.pdf" ;
     link.target = "_blank";
     link.click();
   };
@@ -90,7 +90,7 @@ const Home = () => {
           <button className="button2" onClick={handleCelebrate}>Celebrate</button>
         </div>
       </div>
-      <img src="./src/assets/img1.png" className="my-img" />
+      <img src="/assets/img1.png" className="my-img" />
     </div>
   );
 };
