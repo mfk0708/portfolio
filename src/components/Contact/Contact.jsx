@@ -1,5 +1,5 @@
 import React from 'react'
-import './contact.css'
+import './Contact.css'
 import { useInView } from 'react-intersection-observer';
 import {motion} from 'framer-motion'
 import confetti from 'canvas-confetti';
