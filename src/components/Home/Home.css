@@ -102,7 +102,8 @@ p {
   display: inline-flex;
   margin-top: 1rem;
   justify-content: space-between;
-  width: 25%;
+  gap: .5rem;
+
 }
 .button1 {
   width: 100px;
@@ -296,11 +297,7 @@ p {
     width: 60vw;
     margin-left: 8rem;
   }
-  .main-btn{
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-  }
+
   .link-btn{
     display: flex;
     flex-direction: row;
