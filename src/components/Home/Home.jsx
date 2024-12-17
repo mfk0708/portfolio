@@ -39,7 +39,7 @@ const Home = () => {
     if(isShowEmoji){
       jsConfetti.addConfetti({
         emojis:orderedEmoji,
-        confettiNumber:Math.floor(Math.random()*10)+20,
+        confettiNumber:Math.floor(Math.random()*20)+50,
       })
     }
     else{
