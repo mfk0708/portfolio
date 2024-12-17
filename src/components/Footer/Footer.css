@@ -6,7 +6,7 @@
     align-items: center;
     width: 100%;
     margin-top: 7rem;
-
+    
 }
 .footer-list{
     display: flex;
@@ -19,7 +19,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: #112e42;
-    height: 3rem;
+    height: 4rem;
 }
 .footer-text {
     display: flex;
@@ -46,7 +46,7 @@
   overflow: hidden;
   z-index: 1;
   transition: .4s ease;
-  margin-left:5px;
+ 
 }
 .link-btn2 a:hover{
     transform: scale(1.10);
@@ -74,4 +74,9 @@
 }
 .list2:hover::before{
     width: 100%;
+}
+@media (max-width:400px){
+ .footer-list a{
+    margin: .3rem;
+ }
 }
