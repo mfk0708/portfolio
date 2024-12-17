@@ -9,7 +9,7 @@ const Home = () => {
   const[isIndex,setIsIndex]=useState(0);
   const handleResume = () => {
     const link = document.createElement("a");
-    link.href = "./assets/resume.pdf";
+    link.href = "./src/assets/resume.pdf";
     link.target = "_blank";
     link.click();
   };
