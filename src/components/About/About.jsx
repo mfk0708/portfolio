@@ -28,7 +28,7 @@ const About = () => {
           ref={aboutSubRef}
         >
           <img
-            src="./assets/my-pic.png"
+            src="./src/assets/my-pic.png"
             alt="img😅"
             className="myImg"
           />

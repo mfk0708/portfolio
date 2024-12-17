@@ -90,7 +90,7 @@ const Home = () => {
           <button className="button2" onClick={handleCelebrate}>Celebrate</button>
         </div>
       </div>
-      <img src="./assets/img1.png" className="my-img" />
+      <img src="./src/assets/img1.png" className="my-img" />
     </div>
   );
 };
