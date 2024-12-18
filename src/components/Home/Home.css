@@ -325,3 +325,9 @@ p {
    font-size: 30px;
   }
 }
+@media (max-width:300px){
+  .skills span{
+    display: block;
+    font-size: 23px;
+  }
+}
