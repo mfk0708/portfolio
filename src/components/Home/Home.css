@@ -322,11 +322,6 @@ p {
 @media (max-width:400px){
   .skills span{
    display: block;
-  }
-}
-@media (max-width:300px){
-  .skills span{
-   display: block;
    font-size: 30px;
   }
 }
