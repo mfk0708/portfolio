@@ -323,8 +323,6 @@ p {
   .skills span{
    display: block;
   }
-}
-@media (max-width:320px){
   .fullname{
     font-size: 2rem;
   }
