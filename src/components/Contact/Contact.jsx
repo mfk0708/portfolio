@@ -4,7 +4,9 @@ import { useInView } from 'react-intersection-observer';
 import {motion} from 'framer-motion'
 import confetti from 'canvas-confetti';
 
+
 const Contact = () => {
+ 
 
   const{ref:inpRef,inView:fadeOut}=useInView({
     triggerOnce:true,
@@ -52,8 +54,7 @@ const Contact = () => {
             <div className='canvas'>
             <button className='c-btn'   onClick={handleSend} >SEND</button>
             </div>
-            </div>
-      
+            </div>   
     </div>
     </motion.div>
   )
