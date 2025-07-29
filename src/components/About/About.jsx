@@ -2,7 +2,8 @@ import React from "react";
 import "./About.css";
 import { useInView } from "react-intersection-observer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCss3, faHtml5, faJs, faNodeJs, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faCss3, faJs, faNodeJs, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   const { ref: aboutSubRef, inView: isAboutVisible } = useInView({
@@ -50,15 +51,6 @@ const About = () => {
             <h1 className="heading">TECHNICAL SKILLS</h1>
             <div className="technical-bars"ref={lineRef}>
               <div className='bar'>
-                <FontAwesomeIcon icon={faHtml5} color="#f06529" />
-                <div className="info">
-                  <span>HTML</span>
-                </div>
-                <div className={`progress-line ${isSkillsVisible ? "animate" : ""}`}>
-                  <span className={`html ${isLineVisible ? "animate" : ""}`}></span>
-                </div>
-              </div>
-              <div className='bar'>
                 <FontAwesomeIcon icon={faCss3} color="#2965f1" />
                 <div className="info">
                   <span>CSS</span>
@@ -88,10 +80,20 @@ const About = () => {
               <div className='bar'>
                 <FontAwesomeIcon icon={faNodeJs} color="#68a063" />
                 <div className="info">
-                  <span>NODE</span>
+                  <span>NODE + EXPRESS</span>
                 </div>
                 <div className={`progress-line  ${isSkillsVisible ? "animate" : ""}`}>
                   <span className={`node ${isLineVisible ? "animate" : ""} `}></span>
+                </div>
+              </div>
+
+               <div className='bar'>
+                <FontAwesomeIcon icon={faDatabase} color="#c1bebc"/>  
+                <div className="info">
+                  <span>MONGO DB</span>
+                </div>
+                <div className={`progress-line  ${isSkillsVisible ? "animate" : ""}`}>
+                  <span className={`mongodb ${isLineVisible ? "animate" : ""} `}></span>
                 </div>
               </div>
             </div>
