@@ -5,7 +5,6 @@ import { faFacebookF, faGithub, faInstagram, faLinkedinIn } from "@fortawesome/f
 import JSConfetti from 'js-confetti'
 
 const Home = () => {
-  const [isShowEmoji,setIsShowEmoji]=useState(true);
   const[isIndex,setIsIndex]=useState(0);
   const handleResume = () => {
     const link = document.createElement("a");
@@ -19,14 +18,7 @@ const Home = () => {
   const handleCelebrate = () => {
     const jsConfetti= new JSConfetti();
 
-    const emojisets=
-    [
-      ['🌈', '⚡️', '💥', '✨', '💫', '🌸'],
-      ['🎉', '🎊', '🪅', '🎈', '🍾', '🥳'], 
-      ['🔥', '⭐', '🌟', '🌍', '🌙', '☀️'], 
-      ['❤️', '💛', '💚', '💙', '💜', '🖤'], 
-      ['😊', '😂', '🥰', '😎', '🤩', '😢'],
-    ]
+    
     const confettiColorsSets = [
       ['#FF5733', '#FFBD33', '#33FF57', '#33FFF5', '#9D33FF'],
       ['#FFD1DC', '#D5AAFF', '#A0E7E5', '#FFABAB', '#FFC3A0'],
@@ -34,24 +26,16 @@ const Home = () => {
       ['#2E3192', '#00CFFF', '#FFFFFF', '#FF69B4', '#000000'],
       ['#FFC700', '#FF0000', '#2E3192', '#66FF66', '#00FFFF']
     ];
-    const orderedEmoji=emojisets[isIndex];
+    
     const orderedColors=confettiColorsSets[isIndex]
-    if(isShowEmoji){
-      jsConfetti.addConfetti({
-        emojis:orderedEmoji,
-        confettiNumber:Math.floor(Math.random()*20)+35,
-      })
-    }
-    else{
       jsConfetti.addConfetti({
         confettiColors: orderedColors,
         confettiNumber:Math.floor(Math.random()*100)+500  
       })
+      setIsIndex((isIndex+1)%5);
     }
-    setIsShowEmoji(!isShowEmoji);
-    setIsIndex((isIndex+1)%5);
     
-  };
+  
 
   return (
     <div className="main-content" id="home">

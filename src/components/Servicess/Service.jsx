@@ -19,6 +19,12 @@ import { useInView } from "react-intersection-observer";
         I am a skilled frontend developer with expertise in React and Tailwind CSS, creating responsive, user-friendly applications. With certifications in JavaScript and React, I combine creativity with functionality to build impactful web solutions.</p>
       </div>
 
+       <div className='service'>
+      <i className="fa-solid fa-server"></i>
+        <h3>BACKEND DEVELOPMENT</h3>
+        <p>I am a backend developer skilled in Node.js and Express, specializing in building robust APIs with secure authentication. My work focuses on efficient server-side logic, seamless database integration, and scalable solutions that ensure reliable user access and data protection.</p>
+      </div>
+
       <div className='service'>
       <i className="fa-solid fa-video"></i>
         <h3>VIDEO EDITOR</h3>
@@ -32,6 +38,7 @@ import { useInView } from "react-intersection-observer";
         <h3>UI&UX DESIGN</h3>
         <p>I am a UI/UX designer skilled in Figma, creating intuitive and visually striking interfaces. My work focuses on user-centric designs through detailed wireframes, interactive prototypes, and polished visuals. I deliver engaging, functional solutions that simplify user experiences.</p>
       </div>
+
     </div>
   </div>
   )

@@ -1,9 +1,8 @@
 .service-text{
     font-size: 3rem;
     color: white;
-    display: flex;
-    justify-content: center;
-    margin: 15rem 2rem 3rem 0 ;
+    text-align: center;
+    margin: 15rem 0 3rem 0 ;
  
 }
 .main-service{
@@ -13,10 +12,10 @@
     align-items: center;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 2rem;
-    margin-left: 3.5rem;
     transform: translateY(30%);
     transition: transform 0.5s ease-in,opacity 0.5s ease-in;
     opacity: 0;
+    margin-left: 1rem;
 }
 .main-service.animate{
     transform: translateY(0);
@@ -31,7 +30,7 @@
     background-color: #00abf0;
     border-radius: 3rem;
     height: 500px;
-    width: 85%;
+    width: 95%;
     transition: 0.3s ease-in-out;
     cursor: pointer;
  
@@ -60,9 +59,4 @@
     transform: scale(1.07);
     background-color: black;
     color: #00abf0;
-}
-@media (max-width:1024px){
-    .service-text{
-        margin-left: 2rem;
-    }
 }
